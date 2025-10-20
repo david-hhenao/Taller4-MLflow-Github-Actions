@@ -18,7 +18,8 @@ print(f"--- Debug: Initial CWD: {os.getcwd()} ---")
 
 # --- Define Paths ---
 # Usar rutas absolutas dentro del workspace del runner
-workspace_dir = Path.cwd().parent.as_posix()
+# workspace_dir = Path.cwd().parent.as_posix()
+workspace_dir = os.getcwd()
 mlruns_dir = os.path.join(workspace_dir, "mlruns")
 tracking_uri = "file://" + os.path.abspath(mlruns_dir)
 # Definir explícitamente la ubicación base deseada para los artefactos
@@ -90,7 +91,8 @@ ohe = OneHotEncoder(handle_unknown="ignore", sparse_output=False, drop="first")
 scaler = StandardScaler(with_mean=False)
 
 # data_path = os.path.join(Path.cwd().parent.as_posix(), "data", "Churn_Modelling.csv")
-data_path = "../data/Churn_Modelling.csv"
+# data_path = "../data/Churn_Modelling.csv"
+data_path = "data/Churn_Modelling.csv"
 print(os.getcwd())
 
 data = pd.read_csv(data_path)[
@@ -138,25 +140,25 @@ X_test = pd.DataFrame(scaler.transform(X_test), columns=X_train.columns)
 X_val = pd.DataFrame(scaler.transform(X_val), columns=X_train.columns)
 
 X_val["Exited"] = y_val.values
-X_val.to_csv("../data/validation.csv", index=False)
+X_val.to_csv("data/validation.csv", index=False)
 
 svm = SVC(kernel="rbf", class_weight="balanced")
 svm.fit(X_train, y_train)
 
 accuracy = svm.score(X_test, y_test)
 
-os.makedirs("../pkl", exist_ok=True)
+os.makedirs("pkl", exist_ok=True)
 
-with open("../pkl/scaler.pkl", "wb") as f:
+with open("pkl/scaler.pkl", "wb") as f:
     pickle.dump(scaler, f)
 
-with open("../pkl/ohe.pkl", "wb") as f:
+with open("pkl/ohe.pkl", "wb") as f:
     pickle.dump(ohe, f)
 
-with open("../pkl/le_gender.pkl", "wb") as f:
+with open("pkl/le_gender.pkl", "wb") as f:
     pickle.dump(le_gender, f)
 
-with open("../pkl/model.pkl", "wb") as f:
+with open("pkl/model.pkl", "wb") as f:
     pickle.dump(svm, f)
 
 # --- Iniciar Run de MLflow ---

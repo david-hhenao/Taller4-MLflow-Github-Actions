@@ -1,6 +1,6 @@
 artifact_location: file:///home/sda/Dropbox/Estudio!/Maestria/MLOps/mod3/taller4/Taller4-MLflow-Github-Actions/mlruns
-creation_time: 1760928721675
-experiment_id: '672424512589994840'
-last_update_time: 1760928721675
+creation_time: 1760930541818
+experiment_id: '985857058105949982'
+last_update_time: 1760930541818
 lifecycle_stage: active
-name: CI-CD-Tarea4-20251019-2152
+name: CI-CD-Tarea4-20251019-2222

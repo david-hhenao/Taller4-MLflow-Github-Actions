@@ -1,0 +1,10 @@
+artifact_location: file:///home/sda/Dropbox/Estudio!/Maestria/MLOps/mod3/taller4/Taller4-MLflow-Github-Actions/mlruns/models/m-211d31c96f0d4415bf90df5b98ce09c0/artifacts
+creation_timestamp: 1760930544036
+experiment_id: '985857058105949982'
+last_updated_timestamp: 1760930546023
+model_id: m-211d31c96f0d4415bf90df5b98ce09c0
+model_type: null
+name: model
+source_run_id: c49ce594a3964b5089d6e03cf49c1b0f
+status: 2
+status_message: null

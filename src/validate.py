@@ -19,14 +19,16 @@ print("--- Debug: Cargando dataset de validación ---")
 
 # Generación de x y y
 # data = pd.read_csv(os.path.join(Path.cwd().parent.as_posix(), "data", "validation.csv"))
-data = "../data/validation.csv"
+# data = "../data/validation.csv"
+data = pd.read_csv("data/validation.csv")
 X_valid = data.drop(columns="Exited")
 y_valid = data[["Exited"]]
 
 print(f"--- Debug: Dimensiones de X_valid: {X_valid.shape} ---")
 
 # --- Cargar modelo previamente entrenado ---
-model_path = os.path.join(Path.cwd().parent.as_posix(), "pkl", "model.pkl")
+# model_path = os.path.join(Path.cwd().parent.as_posix(), "pkl", "model.pkl")
+model_path ='pkl/model.pkl'
 print(f"--- Debug: Intentando cargar modelo desde: {model_path} ---")
 
 try:

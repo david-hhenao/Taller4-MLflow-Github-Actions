@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sda/Dropbox/Estudio!/Maestria/MLOps/mod3/taller4/Taller4-MLflow-Github-Actions/mlruns/c49ce594a3964b5089d6e03cf49c1b0f/artifacts
+end_time: 1760930546024
+entry_point_name: ''
+experiment_id: '985857058105949982'
+lifecycle_stage: active
+run_id: c49ce594a3964b5089d6e03cf49c1b0f
+run_name: caring-skunk-963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760930543178
+status: 3
+tags: []
+user_id: sda
