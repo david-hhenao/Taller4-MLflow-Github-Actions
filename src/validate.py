@@ -19,7 +19,7 @@ print("--- Debug: Cargando dataset de validación ---")
 
 # Generación de x y y
 # data = pd.read_csv(os.path.join(Path.cwd().parent.as_posix(), "data", "validation.csv"))
-data = '../data/validation.csv'
+data = "../data/validation.csv"
 X_valid = data.drop(columns="Exited")
 y_valid = data[["Exited"]]
 

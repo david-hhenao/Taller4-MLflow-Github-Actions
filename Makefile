@@ -41,7 +41,7 @@ clean:
 # export MLFLOW_TRACKING_URI="file://$PWD/ruta/mlruns"
 # mlflow models serve -m "runs:/36ac30daa98b4e289535a94bd41b8d06/model" -p 5001 --env-manager local
 
-# PERO ANTES CORRER LOCAL:
+# PERO ANTES CORRER LOCAL :
 
 # make install
 # make train

@@ -90,7 +90,7 @@ ohe = OneHotEncoder(handle_unknown="ignore", sparse_output=False, drop="first")
 scaler = StandardScaler(with_mean=False)
 
 # data_path = os.path.join(Path.cwd().parent.as_posix(), "data", "Churn_Modelling.csv")
-data_path = '../data/Churn_Modelling.csv'
+data_path = "../data/Churn_Modelling.csv"
 
 data = pd.read_csv(data_path)[
     [
