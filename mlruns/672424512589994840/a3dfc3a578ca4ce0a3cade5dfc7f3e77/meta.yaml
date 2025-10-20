@@ -1,0 +1,14 @@
+artifact_uri: file:///home/sda/Dropbox/Estudio!/Maestria/MLOps/mod3/taller4/Taller4-MLflow-Github-Actions/mlruns/a3dfc3a578ca4ce0a3cade5dfc7f3e77/artifacts
+end_time: 1760928725933
+entry_point_name: ''
+experiment_id: '672424512589994840'
+lifecycle_stage: active
+run_id: a3dfc3a578ca4ce0a3cade5dfc7f3e77
+run_name: upset-seal-678
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760928723037
+status: 3
+tags: []
+user_id: sda
