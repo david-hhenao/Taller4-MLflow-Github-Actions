@@ -28,7 +28,7 @@ print(f"--- Debug: Dimensiones de X_valid: {X_valid.shape} ---")
 
 # --- Cargar modelo previamente entrenado ---
 # model_path = os.path.join(Path.cwd().parent.as_posix(), "pkl", "model.pkl")
-model_path ='pkl/model.pkl'
+model_path = "pkl/model.pkl"
 print(f"--- Debug: Intentando cargar modelo desde: {model_path} ---")
 
 try:
